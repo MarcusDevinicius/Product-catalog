@@ -1,0 +1,23 @@
+.btnProduct {
+    font-family: Arial;
+    font-size: 25px; 
+    letter-spacing: 1px; 
+    cursor: pointer;
+    border: 2px solid #3d0808;
+    background-color: #db6c6c;
+    color: #3d0808;
+    padding: 10px 12px;
+    margin-right: 8px;
+    border-radius: 5px; 
+    transition: .3s all ease-in-out;
+}
+
+.btnProduct:hover {
+    background-color: #3d0808;
+    color: #db6c6c;
+    /* border: none; */
+}
+
+.img-product {
+    width: 400px;
+}

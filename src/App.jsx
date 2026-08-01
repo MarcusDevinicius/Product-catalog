@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from './Product'
+import './CSS/style.css'
 
 function App() {
 
@@ -17,10 +18,10 @@ function App() {
 
   return (
     <>
-      <button onClick={handleClick}>Tablet</button>
-      <button onClick={handleClick}>Smartphone</button>
-      <button onClick={handleClick}>Notebook</button>
-      {loading && <p>Loading...</p>}
+      <button className='btnProduct' onClick={handleClick}>Tablet</button>
+      <button className='btnProduct' onClick={handleClick}>Smartphone</button>
+      <button className='btnProduct' onClick={handleClick}>Notebook</button>
+      {loading && <p style={{fontFamily: 'Arial', fontSize: '25px', color: '#3d0808'}}>Loading...</p>}
       {!loading && data && <Product data={data}/>}
     </>
   )
